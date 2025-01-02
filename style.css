@@ -1,0 +1,112 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eef2f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    text-align: right;
+}
+
+/* Container for the quiz */
+.quiz-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+/* Title styling */
+h1 {
+    text-align: center;
+    color: #444;
+    font-size: 26px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0078d7;
+    padding-bottom: 10px;
+}
+
+/* Individual question styling */
+.question {
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.question p {
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Label and radio button styling */
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+label:hover {
+    color: #0078d7;
+}
+
+input[type="radio"] {
+    margin-left: 10px;
+    transform: scale(1.3);
+    accent-color: #0078d7;
+}
+
+/* Submit button */
+button {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 18px;
+    color: #fff;
+    background-color: #0078d7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 120, 215, 0.3);
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+button:active {
+    transform: scale(0.98);
+    background-color: #004c9c;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .quiz-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .question p {
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+}
